@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # creates user_root_path, used by devise after login
   get '/profile' => 'profiles#index', as: :user_root
 
+  resources :favorites, only: :index
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
