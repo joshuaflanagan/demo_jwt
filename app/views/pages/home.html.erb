@@ -1,3 +1,7 @@
 <h1>Main App</h1>
 
 This is the main app
+
+<% unless user_signed_in? %>
+<h2><%= link_to "Sign in", new_user_session_path %> to do anything useful</h2>
+<% end %>

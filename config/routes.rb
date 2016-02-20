@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home'
 
+  # creates user_root_path, used by devise after login
+  get '/profile' => 'profiles#index', as: :user_root
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
