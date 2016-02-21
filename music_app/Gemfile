@@ -24,6 +24,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Configure cross-origin requests
 gem 'rack-cors'
 
+# Support for decoding JSON web tokens
+gem 'jwt'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
