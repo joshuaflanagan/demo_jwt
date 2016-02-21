@@ -1,1 +1,24 @@
 <h2>A few of my favorite things</h2>
+
+<ul id="favorite_albums">
+</ul>
+
+<script>
+$(function(){
+  $.ajax({
+    dataType: "json",
+    url: "http://localhost:3100/albums",
+  }).then(function(data, r){
+    var list = $("#favorite_albums")
+
+    $.each(data, function(){
+      list.append(
+        $("<li />").append(
+          $("<span />").addClass("artist").text(this.artist),
+          $("<span />").addClass("title").text(this.title)
+        )
+      );
+    });
+  });
+})
+</script>

@@ -27,3 +27,22 @@
   font-weight: bold;
   padding: 6px;
 }
+
+
+#favorite_albums {
+  list-style-type: none;
+  font-size: 32px;
+}
+
+#favorite_albums li {
+  padding: 10px;
+}
+
+#favorite_albums .artist {
+  font-weight: bold;
+}
+
+#favorite_albums .title {
+  font-style: italic;
+  margin-left: 30px;
+}
