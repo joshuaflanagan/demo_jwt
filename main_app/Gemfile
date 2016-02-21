@@ -24,6 +24,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # User authentication
 gem 'devise'
 
+# Generate JSON Web Tokens to identify users to music_app
+gem 'jwt'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -4,10 +4,15 @@
 </ul>
 
 <script>
+
+  var json_web_token = '<%= json_web_token %>';
+
+
 $(function(){
   $.ajax({
     dataType: "json",
     url: "http://localhost:3100/albums",
+    headers: {"Authorization": "Bearer " + json_web_token}
   }).then(function(data, r){
     var list = $("#favorite_albums")
 
